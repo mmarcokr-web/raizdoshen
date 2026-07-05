@@ -1,0 +1,485 @@
+/* Estilos Gerais */
+        body {
+            background-color: #F9F7F2;
+            color: #3D322B;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+/* Cabeçalho e Navegação */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%; /* Reduzi um pouco o padding para ficar mais compacto */
+    background-color: #c0cebd;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center; /* Alinha o link e o botão na mesma linha horizontal */
+    gap: 2.5rem; /* Espaço mais generoso entre o link e o botão */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3D322B;
+    font-weight: 600; /* Um pouco mais de peso para sobressair */
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.7; /* Efeito suave ao passar o rato */
+}
+
+.logo {
+    font-size: 1.8rem;         /* Aumentado para maior impacto */
+    font-weight: 800;          /* Muito mais negrito */
+    letter-spacing: 3px;       /* Mais espaçamento dá um ar de luxo */
+    text-transform: uppercase;
+    color: #3D322B;            /* Mantém o castanho escuro para contraste */
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover{
+    opacity: 0.7;
+}
+
+
+/* Ajuste fino no botão para ficar alinhado com o texto */
+.cta-button {
+    padding: 0.6rem 1.4rem; /* Ligeiramente mais pequeno para não dominar o header */
+    font-size: 0.9rem;
+}
+        
+        /* botão marcar consulta  */
+        
+        .cta-button {
+            background-color: #3D322B;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 3px solid #ebbc6b;
+        }
+
+        .cta-button:hover {
+  
+       
+            border-color: #ebbc6b;
+            border: 3px solid #f1dbb5;
+            transform: translateY(-2px);
+
+        }
+
+
+
+
+        /* Hero */
+        header { text-align: center; padding: 3rem 1rem; }
+        h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+
+        /* Grid de Cartões */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 2rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+/* Cartões Sobre *****************************************************************************   */
+
+
+        .card {
+            background: white;
+            border: 1px solid #E5E2DE;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border-radius: 45px;
+        }
+        .card:hover { 
+            
+            transform: translateY(-5px);
+            border-color: #ebbc6b;
+            border: 2px solid #C5A56D;
+        
+        
+        }
+        .card img {
+            width: 100%;
+            height: 25rem;
+            object-fit: cover; /* Mantém a proporção da foto */
+            
+        }
+        .card-content {
+             padding: 1rem; 
+             text-align: center;
+        
+        
+        
+        }
+
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.6rem;
+            color: #8B6B4D;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        
+        }
+        .card p { font-size: 0.9rem;
+                color: #666;
+                font-weight: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .card .cta-button {
+
+            background-color: #2C3E36;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 3px solid #ebbc6b;
+        }
+
+
+        .cta-card {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #555439;
+            
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border: 1px solid #ebbc6b; /* Borda dourada */
+            transition: all 0.3s ease;
+        }
+
+        .cta-card:hover {
+            background-color: var(--accent); /* Fica dourado ao passar o rato */
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+
+
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* Ocultar links em mobile */
+            h1 { font-size: 2rem; }
+        }
+
+
+/* Secção Sobre *****************************************************************************   */
+
+
+
+.bio-section {
+    padding: 4rem 10%;
+    background-color: #e3e9e0;
+    background-image: linear-gradient(to right, rgba(61, 50, 43, 0), rgba(61, 50, 43, 0.2), rgba(61, 50, 43, 0));
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center; /* Alinha o texto com a imagem ao centro */
+    gap: 40px; /* Espaço entre a imagem e o texto */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bio-image {
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 60%; /* Cria os cantos arredondados */
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+
+.bio-container .Angela-sobre {
+    font-size: 1.5rem;
+    color: #ebbc6b;
+    margin-bottom: 1.5rem;
+}
+
+
+.bio-text h2 {
+    font-size: 2.5rem;
+    color: #3D322B;
+    margin-bottom: 1.5rem;
+}
+
+
+.credenciais {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666; /* Um cinzento suave para não distrair */
+    font-style: normal; /* Para contrastar com o resto do texto em itálico */
+    border-top: 1px solid rgba(61, 50, 43, 0.1);
+    padding-top: 10px;
+    display: inline-block;
+}
+
+/* Responsividade: em telemóvel, a imagem vai para cima do texto */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bio-image { width: 100%; height: auto; }
+}
+
+
+
+/* Footer Sobre *****************************************************************************   */
+
+
+.site-footer {
+
+    text-align: center;
+}
+
+.footer-contacts {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o logótipo e o texto */
+    color: #3D322B;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: 1px solid rgba(61, 50, 43, 0.2);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #C5A56D;
+    color: white;
+    border-color: #C5A56D;
+}
+
+
+
+
+
+/* Paginas contactos *****************************************/
+
+
+.contact-page {
+    padding: 4rem 5%;
+    background-color: #F9F7F2;
+    text-align: center;
+}
+
+.contact-block {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(61, 50, 43, 0.1);
+}
+
+.contact-block h3 {
+    color: #C5A56D; /* Dourado */
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-block p {
+    font-size: 1.1rem;
+    color: #3D322B; /* Castanho Escuro */
+    margin: 0.5rem 0;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3D322B;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Botão de Ação */
+.cta-button {
+    display: inline-block;
+    background-color: #3D322B; /* Castanho Escuro */
+    color: #FFFFFF !important;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #3D322B;
+}
+
+.cta-button:hover {
+    background-color: #C5A56D; /* Dourado no hover */
+    border-color: #C5A56D;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+/* Ajuste para o botão em ecrãs pequenos */
+@media (max-width: 600px) {
+    .cta-button {
+        padding: 0.5rem 1rem; /* Botão mais curto */
+        font-size: 0.8rem;    /* Texto ligeiramente mais pequeno */
+        border-radius: 20px;  /* Ajuste no arredondamento */
+        white-space: nowrap;  /* Impede que o texto parta em duas linhas */
+    }
+
+    .logo {
+        font-size: 1.2rem;    /* Logo ligeiramente menor para dar espaço ao botão */
+        letter-spacing: 1px;
+    }
+}
+
+
+.services-container {
+    padding: 1rem 10%;
+    
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    /* Cria colunas automáticas que se adaptam ao ecrã */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    
+}
+
+.service-card {
+    background-color: #f1eded;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(61, 50, 43, 0.1);
+    color: #3D322B;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(15, 15, 15, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    background-color: #ebbc6b; /* Dourado ao passar o rato */
+    color: #FFFFFF;
+    cursor: default;
+}
+
+
+.treatments-section {
+    padding: 5rem 5%;
+    background-color: #FFFFFF; /* Fundo branco para separar do fundo bege de outras secções */
+}
+
+.section-header {
+    text-align: center;
+    
+}
+
+.section-header h2 {
+    color: #3D322B;
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+/* A linha separadora */
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #ebbc6b; /* Dourado da marca */
+    margin: 0 auto; /* Centraliza a linha */
+}
+
+.treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+
+
+
+
+/* Container das avaliações *************************************
+
+*********************************************************/
+.testemunhos-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid com controlo de espaços */
+.masonry-grid {
+    display: grid;
+    /* Isto cria colunas automáticas de pelo menos 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Aqui defines o GAPA (espaço entre as fotos) */
+    gap: 20px; 
+    align-items: start;
+}
+
+/* Garante que as imagens não ficam gigantes */
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
